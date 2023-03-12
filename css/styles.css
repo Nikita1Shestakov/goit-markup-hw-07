@@ -105,7 +105,7 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
-.mob-menu .is-open {
+.mob-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
@@ -718,8 +718,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 576px;
+  max-width: 100%;
+  max-height: 100%;
   background: #fcfcfc;
   border-radius: 4px;
   padding: 24px;
