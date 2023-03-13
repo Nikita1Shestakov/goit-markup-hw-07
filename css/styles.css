@@ -255,6 +255,7 @@ img {
 .text {
   padding-top: 96px;
   padding-bottom: 96px;
+  height: auto;
 }
 .text-container {
   display: block;
@@ -285,6 +286,9 @@ img {
 .section-body {
   max-width: 396px;
 }
+.section-body:not(:last-child) {
+  padding-bottom: 72px;
+}
 .section-subtitles {
   display: block;
   text-align: center;
@@ -302,11 +306,11 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 72px;
+  
 }
+
 /*----------------aside----------*/
 .aside {
-  padding-bottom: 120px;
 }
 .aside-container {
   display: none;
@@ -718,13 +722,14 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  max-width: 100%;
+  max-width: 392px;
   max-height: 100%;
   background: #fcfcfc;
   border-radius: 4px;
   padding: 24px;
   transition: transform 250ms linear;
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }

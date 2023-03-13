@@ -151,16 +151,23 @@
     margin: 0 auto 48px;
     max-width: 496px;
   }
+  .aside{
+    padding: 0;
+  }
   .section-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 24px;
+    gap: 72px 24px;
   }
   .section-text {
     max-width: 356px;
+    margin: 0;
   }
   .section-body {
     width: calc((100% - 24px) / 2);
+  }
+  .section-body {
+    padding-bottom: 72px;
   }
 
   .team > .container {
@@ -180,16 +187,19 @@
     gap: 0 24px;
   }
   .team {
-    padding-bottom: 104px;
+    padding-bottom: 22px;
   }
   .team-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 0 24px;
   }
   .team-item {
     width: calc((100% - 24px) / 2);
-    margin-bottom: 64px;
+    
   }
+  
+  
   .footer{
     width: 100%;
   }
@@ -201,7 +211,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 96px 164px 96px 108px;
+    justify-content: center;
   }
   .footer-modal-form {
     display: flex;
@@ -227,6 +237,7 @@
   
 }
 .footer-modal {
+  margin-right: 50px;
     
 }
 .footer-modal-text {
